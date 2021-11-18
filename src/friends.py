@@ -19,3 +19,14 @@ def total_money(peoples):
         total += people["monies"]
     
     return total
+
+def lend_money(person2, person1, lended):
+    person2["monies"] -= lended
+    person1["monies"] += lended
+
+def all_favourite_foods(peoples):
+    favourite_foods = []
+    for people in peoples:
+        favourite_foods += people["favourites"]["snacks"]
+    return favourite_foods
+
