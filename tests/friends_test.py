@@ -146,4 +146,10 @@ class TestFriends(unittest.TestCase):
     expected = ["Friends", "Baywatch", "Pokemon", "X-Files"]
     self.assertEqual(expected, result)
 
-  # BONUS: Try to refactor the previous test and function to use Python's built-in set() function, returning an object of all unique tv shows.
+  def test_unique_favourite_tv_shows2(self):
+    result = unique_favourite_tv_shows_2(self.people)
+    expected = set(["Friends", "Baywatch", "Pokemon", "X-Files"])
+    self.assertEqual(expected, result)
+  # BONUS: Try to refactor the previous test and function 
+  # to use Python's built-in set() function, 
+  # returning an object of all unique tv shows.

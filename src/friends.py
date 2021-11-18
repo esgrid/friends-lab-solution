@@ -39,3 +39,9 @@ def unique_favourite_tv_shows(peoples):
         if people["favourites"]["tv_show"] not in favourite_shows:
             favourite_shows.append(people["favourites"]["tv_show"])
     return favourite_shows
+
+def unique_favourite_tv_shows_2(peoples):
+    favourite_shows = set()
+    for people in peoples:
+        favourite_shows.add(people["favourites"]["tv_show"])
+    return favourite_shows
