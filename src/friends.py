@@ -30,3 +30,12 @@ def all_favourite_foods(peoples):
         favourite_foods += people["favourites"]["snacks"]
     return favourite_foods
 
+def find_no_friends(peoples):
+    return [people for people in peoples if people["friends"] == []]
+
+def unique_favourite_tv_shows(peoples):
+    favourite_shows = []
+    for people in peoples:
+        if people["favourites"]["tv_show"] not in favourite_shows:
+            favourite_shows.append(people["favourites"]["tv_show"])
+    return favourite_shows

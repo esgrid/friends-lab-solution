@@ -133,14 +133,14 @@ class TestFriends(unittest.TestCase):
 
   # 9. Find people with no friends
   # (hint: return an list, there might be more people in the future with no friends!)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_find_no_friends(self):
     self.assertEqual([self.person5], find_no_friends(self.people))
 
 
   # 10. Find the set of everyone's favourite tv shows joined together, with no duplicates
     # (hint: return a list of all favourite tv shows that only appear once)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_unique_favourite_tv_shows(self):
     result = unique_favourite_tv_shows(self.people)
     expected = ["Friends", "Baywatch", "Pokemon", "X-Files"]
